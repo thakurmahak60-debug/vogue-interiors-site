@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vogue Interiors — Crafting Spaces | Interior Designer in Indore</title>
+<meta name="description" content="Vogue Interiors – Crafting Spaces is an interior design studio in Indore offering residential, commercial and turnkey interior solutions, space planning, modular kitchens and interior styling.">
+<meta property="og:title" content="Vogue Interiors — Crafting Spaces">
+<meta property="og:description" content="Interior design studio in Indore. Residential, commercial and turnkey interiors, space planning to the last detail.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "InteriorDesigner",
+  "name": "VOGUE INTERIORS - Crafting Spaces",
+  "image": "",
+  "telephone": "+91-94074-60126",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Center Point Building, Snehnagar",
+    "addressLocality": "Indore",
+    "addressRegion": "Madhya Pradesh",
+    "postalCode": "452001",
+    "addressCountry": "IN"
+  },
+  "areaServed": "Indore",
+  "openingHours": "Mo-Sa 11:00-19:00"
+}
+</script>
+<style>
+  :root{
+    --ivory:#F3ECE1;
+    --ivory-soft:#EDE4D5;
+    --ink:#211B17;
+    --ink-soft:#3A322B;
+    --stone:#A79C8C;
+    --walnut:#5B3B27;
+    --brass:#A9803F;
+    --brass-soft:#C7A96B;
+    --marble:#E4DCCC;
+    --line: rgba(33,27,23,0.14);
+    --line-light: rgba(243,236,225,0.22);
+    --radius: 2px;
+    --ease: cubic-bezier(.22,.61,.36,1);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--ivory);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+  }
+
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:500;margin:0;letter-spacing:-0.01em;}
+  p{margin:0;}
+  ul{margin:0;padding:0;list-style:none;}
+  button{font-family:inherit;cursor:pointer;}
+
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--brass);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{
+    content:'';
+    width:22px;height:1px;
+    background:var(--brass);
+    display:inline-block;
+  }
+
+  .wrap{max-width:1280px;margin:0 auto;padding:0 48px;}
+  @media (max-width:760px){.wrap{padding:0 22px;}}
+
+  /* ---------- Sheet index rail (signature nav) ---------- */
+  .rail{
+    position:fixed;
+    left:0;top:0;bottom:0;
+    width:96px;
+    z-index:60;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:0 0 0 28px;
+    pointer-events:none;
+  }
+  .rail-line{
+    position:absolute;
+    left:47px;top:0;bottom:0;
+    width:1px;
+    background:linear-gradient(to bottom, transparent, var(--line) 12%, var(--line) 88%, transparent);
+  }
+  .rail-items{display:flex;flex-direction:column;gap:26px;pointer-events:auto;}
+  .rail-item{
+    display:flex;align-items:center;gap:10px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10.5px;
+    letter-spacing:0.06em;
+    color:var(--stone);
+    cursor:pointer;
+    background:none;border:none;padding:0;
+    transition:color .3s var(--ease);
+  }
+  .rail-item .tick{
+    width:14px;height:1px;background:var(--stone);
+    transition:all .35s var(--ease);
+  }
+  .rail-item .code{opacity:0.8;}
+  .rail-item .label{
+    max-width:0;overflow:hidden;white-space:nowrap;
+    opacity:0;
+    transition:max-width .35s var(--ease), opacity .25s var(--ease);
+  }
+  .rail-item:hover .label,
+  .rail-item.active .label{max-width:120px;opacity:1;}
+  .rail-item.active{color:var(--ink);}
+  .rail-item.active .tick{width:26px;background:var(--brass);}
+
+  @media (max-width:980px){ .rail{display:none;} }
+
+  /* ---------- Utility bar ---------- */
+  .utility-bar{
+    background:var(--ink);color:rgba(243,236,225,0.85);
+    font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.04em;
+    display:flex;justify-content:flex-end;gap:26px;
+    padding:9px 48px;
+    position:fixed;top:0;left:0;right:0;z-index:71;
+  }
+  @media (max-width:760px){.utility-bar{display:none;}}
+  .utility-bar a{display:flex;align-items:center;gap:6px;transition:color .25s;}
+  .utility-bar a:hover{color:#D9BE85;}
+
+  /* ---------- Top nav ---------- */
+  .topnav{
+    position:fixed;top:34px;left:0;right:0;z-index:70;
+    padding:22px 48px;
+    display:flex;align-items:center;justify-content:space-between;
+    transition: background .4s var(--ease), padding .4s var(--ease), border-color .4s var(--ease), top .4s var(--ease);
+    border-bottom:1px solid transparent;
+  }
+  @media (max-width:760px){ .topnav{top:0;} }
+  .topnav.scrolled{
+    background:rgba(243,236,225,0.78);
+    backdrop-filter:blur(14px) saturate(140%);
+    -webkit-backdrop-filter:blur(14px) saturate(140%);
+    padding:14px 48px;
+    border-color:var(--line);
+  }
+  @media (max-width:760px){ .topnav, .topnav.scrolled{padding:16px 22px;} }
+
+  .brand{
+    font-family:'Fraunces',serif;
+    font-size:19px;
+    letter-spacing:0.01em;
+  }
+  .brand b{font-weight:600;}
+  .brand span{
+    display:block;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:9px;
+    letter-spacing:0.18em;
+    color:var(--brass);
+    margin-top:2px;
+  }
+
+  .navlinks{display:flex;gap:34px;align-items:center;}
+  .navlinks a{
+    font-size:13px;letter-spacing:0.03em;
+    position:relative;
+    padding:4px 0;
+  }
+  .navlinks a::after{
+    content:'';position:absolute;left:0;bottom:0;width:0;height:1px;
+    background:var(--ink);transition:width .3s var(--ease);
+  }
+  .navlinks a:hover::after{width:100%;}
+  .navlinks a.active{color:var(--brass);}
+  @media (max-width:980px){ .navlinks{display:none;} }
+
+  .btn{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;letter-spacing:0.08em;text-transform:uppercase;
+    padding:13px 22px;
+    border:1px solid currentColor;
+    display:inline-flex;align-items:center;gap:8px;
+    transition:background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease);
+  }
+  .btn-dark{background:var(--ink);color:var(--ivory);border-color:var(--ink);}
+  .btn-dark:hover{background:var(--brass);border-color:var(--brass);}
+  .btn-outline{color:var(--ink);}
+  .btn-outline:hover{background:var(--ink);color:var(--ivory);}
+  .btn-light{border-color:var(--line-light);color:var(--ivory);}
+  .btn-light:hover{background:var(--ivory);color:var(--ink);border-color:var(--ivory);}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;
+    height:100svh;min-height:640px;
+    display:flex;flex-direction:column;justify-content:flex-end;
+    overflow:hidden;
+    background:var(--ink);
+  }
+  .hero-img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    opacity:0.62;
+    transform:scale(1.06);
+    animation:heroZoom 22s var(--ease) forwards;
+  }
+  @keyframes heroZoom{ to{ transform:scale(1); } }
+  .hero::before{
+    content:'';position:absolute;inset:0;
+    background:linear-gradient(180deg, rgba(33,27,23,0.35) 0%, rgba(33,27,23,0.25) 40%, rgba(33,27,23,0.92) 100%);
+  }
+
+  /* blueprint ruler ticks along hero top */
+  .ruler{
+    position:absolute;top:0;left:0;right:0;height:74px;
+    display:flex;align-items:flex-start;z-index:2;
+    padding:0 48px;
+    opacity:0.5;
+  }
+  @media (max-width:980px){.ruler{padding:0 96px 0 22px;}}
+  .ruler-track{position:relative;width:100%;height:100%;}
+  .ruler-tick{
+    position:absolute;top:0;width:1px;height:14px;background:var(--ivory);
+  }
+  .ruler-tick.major{height:24px;}
+  .ruler-label{
+    position:absolute;top:28px;
+    font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.08em;
+    color:var(--ivory);white-space:nowrap;
+  }
+
+  .hero-content{position:relative;z-index:3;padding:0 48px 76px;}
+  @media (max-width:980px){.hero-content{padding:0 22px 64px;}}
+  .hero-eyebrow{
+    font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--brass-light,#D9BE85);color:#D9BE85;
+    display:flex;align-items:center;gap:10px;margin-bottom:26px;
+  }
+  .hero-eyebrow::before{content:'';width:26px;height:1px;background:#D9BE85;}
+  h1.hero-title{
+    color:var(--ivory);
+    font-size:clamp(44px, 7.4vw, 108px);
+    line-height:0.98;
+    font-weight:500;
+    max-width:16ch;
+    letter-spacing:-0.015em;
+  }
+  h1.hero-title em{font-style:italic;font-weight:400;color:#D9BE85;}
+  .hero-sub{
+    color:rgba(243,236,225,0.82);
+    max-width:480px;
+    font-size:16px;
+    margin-top:26px;
+    font-weight:400;
+  }
+  .hero-cta-row{display:flex;gap:16px;margin-top:44px;flex-wrap:wrap;}
+
+  .scroll-indi{
+    position:absolute;right:48px;bottom:34px;z-index:3;
+    display:flex;align-items:center;gap:10px;
+    color:rgba(243,236,225,0.7);
+    font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;
+    writing-mode:vertical-rl;
+  }
+  @media (max-width:760px){.scroll-indi{display:none;}}
+  .scroll-indi .line{width:1px;height:46px;background:rgba(243,236,225,0.4);position:relative;overflow:hidden;}
+  .scroll-indi .line::after{
+    content:'';position:absolute;top:-100%;left:0;width:100%;height:100%;
+    background:#D9BE85;
+    animation:scrollLine 2.2s ease-in-out infinite;
+  }
+  @keyframes scrollLine{ 0%{top:-100%;} 60%{top:100%;} 100%{top:100%;} }
+
+  /* ---------- Trust chip strip ---------- */
+  .chip-strip{
+    background:var(--ink);
+    border-top:1px solid var(--line-light);
+  }
+  .chip-row{
+    display:grid;grid-template-columns:repeat(4,1fr);
+  }
+  @media (max-width:900px){.chip-row{grid-template-columns:repeat(2,1fr);}}
+  .chip{
+    padding:26px 30px;
+    border-right:1px solid var(--line-light);
+    display:flex;align-items:center;gap:14px;
+    color:var(--ivory);
+  }
+  .chip:last-child{border-right:none;}
+  @media (max-width:900px){ .chip:nth-child(2){border-right:none;} .chip{border-bottom:1px solid var(--line-light);} }
+  .chip svg{flex:0 0 auto;color:#D9BE85;}
+  .chip-text{font-size:13px;letter-spacing:.01em;}
+  .chip-text b{display:block;font-family:'Fraunces';font-size:15px;font-weight:500;color:var(--ivory);}
+
+  /* ---------- Why choose us icon grid ---------- */
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+  @media (max-width:900px){.why-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:560px){.why-grid{grid-template-columns:1fr;}}
+  .why-cell{background:var(--ivory);padding:34px 28px;}
+  .why-cell .badge{
+    width:52px;height:52px;border-radius:50%;
+    background:rgba(169,128,63,0.12);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .why-cell svg{color:var(--brass);}
+  .why-cell h4{margin-top:18px;font-size:16.5px;font-weight:500;}
+  .why-cell p{margin-top:10px;font-size:13.5px;color:var(--ink-soft);}
+
+  /* ---------- Filter tabs ---------- */
+  .filter-row{display:flex;gap:8px;flex-wrap:wrap;margin:34px 0 0;}
+  .filter-btn{
+    font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;
+    padding:10px 20px;border:1px solid var(--line);background:transparent;color:var(--ink-soft);
+    border-radius:999px;
+    transition:all .25s var(--ease);
+  }
+  .filter-btn:hover{border-color:var(--ink);color:var(--ink);}
+  .filter-btn.active{background:var(--ink);color:var(--ivory);border-color:var(--ink);}
+  .p-card{transition:opacity .3s var(--ease), transform .3s var(--ease);}
+  .p-card.hidden{display:none;}
+
+  /* ---------- WhatsApp popup bubble ---------- */
+  .wa-bubble{
+    position:fixed;right:26px;bottom:92px;z-index:79;
+    background:var(--ivory);border:1px solid var(--line);
+    padding:14px 16px;max-width:220px;
+    box-shadow:0 12px 30px rgba(33,27,23,0.14);
+    font-size:13px;
+    opacity:0;transform:translateY(10px);pointer-events:none;
+    transition:all .3s var(--ease);
+  }
+  .wa-bubble.show{opacity:1;transform:translateY(0);pointer-events:auto;}
+  .wa-bubble b{display:block;font-family:'Fraunces';font-size:14.5px;margin-bottom:4px;}
+  .wa-bubble button{
+    position:absolute;top:6px;right:8px;background:none;border:none;color:var(--stone);font-size:14px;
+  }
+
+  /* ---------- Hero quick contact card ---------- */
+  .hero-quick{
+    position:absolute;right:48px;top:150px;z-index:3;
+    width:300px;
+    background:rgba(243,236,225,0.96);
+    backdrop-filter:blur(10px);
+    padding:26px 24px;
+    border:1px solid rgba(255,255,255,0.2);
+  }
+  @media (max-width:1180px){ .hero-quick{display:none;} }
+  .hero-quick .eyebrow{color:var(--brass);margin-bottom:14px;}
+  .hero-quick .eyebrow::before{background:var(--brass);}
+  .hq-row{margin-bottom:12px;}
+  .hq-row input, .hq-row select{
+    width:100%;border:1px solid var(--line);background:var(--ivory);
+    padding:11px 12px;font-family:'Inter';font-size:13.5px;color:var(--ink);outline:none;
+  }
+  .hq-row input:focus, .hq-row select:focus{border-color:var(--brass);}
+  .hero-quick .btn{width:100%;justify-content:center;margin-top:4px;}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{margin-top:10px;border-top:1px solid var(--line);}
+  .faq-item{border-bottom:1px solid var(--line);}
+  .faq-q{
+    width:100%;text-align:left;background:none;border:none;
+    padding:24px 4px;display:flex;justify-content:space-between;align-items:center;gap:20px;
+    font-family:'Fraunces';font-size:17px;font-weight:500;color:var(--ink);
+  }
+  .faq-q .plus{
+    font-family:'IBM Plex Mono';font-size:18px;color:var(--brass);
+    transition:transform .3s var(--ease);flex:0 0 auto;
+  }
+  .faq-item.open .faq-q .plus{transform:rotate(45deg);}
+  .faq-a{
+    max-height:0;overflow:hidden;
+    transition:max-height .35s var(--ease);
+  }
+  .faq-a p{padding:0 4px 24px;font-size:14.5px;color:var(--ink-soft);max-width:62ch;}
+
+  /* ---------- Section shell ---------- */
+  section{position:relative;padding:130px 0;}
+  section.tight{padding:100px 0;}
+  @media (max-width:760px){ section{padding:88px 0;} section.tight{padding:70px 0;} }
+  .section-head{
+    display:flex;justify-content:space-between;align-items:flex-end;gap:40px;
+    margin-bottom:70px;
+    border-bottom:1px solid var(--line);
+    padding-bottom:30px;
+  }
+  @media (max-width:760px){.section-head{flex-direction:column;align-items:flex-start;gap:18px;}}
+  .section-title{font-size:clamp(30px,4vw,48px);max-width:14ch;}
+  .section-note{
+    max-width:340px;font-size:14.5px;color:var(--ink-soft);
+    font-family:'Inter';
+  }
+  .dark{background:var(--ink);color:var(--ivory);}
+  .dark .section-note{color:rgba(243,236,225,0.68);}
+  .dark .eyebrow{color:#D9BE85;}
+  .dark .eyebrow::before{background:#D9BE85;}
+  .dark .section-head{border-color:var(--line-light);}
+
+  /* ---------- Intro / Practice ---------- */
+  .intro-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:90px;align-items:start;}
+  @media (max-width:900px){.intro-grid{grid-template-columns:1fr;gap:40px;}}
+  .intro-lead{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(22px,2.6vw,32px);line-height:1.36;color:var(--ink);}
+  .intro-lead em{font-style:italic;color:var(--brass);}
+  .value-list{margin-top:44px;display:grid;gap:0;}
+  .value-row{
+    display:grid;grid-template-columns:60px 1fr;gap:20px;
+    padding:22px 0;border-top:1px solid var(--line);
+  }
+  .value-row:last-child{border-bottom:1px solid var(--line);}
+  .value-num{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--brass);padding-top:3px;}
+  .value-row h4{font-size:17px;font-weight:600;font-family:'Inter';margin-bottom:6px;}
+  .value-row p{font-size:14px;color:var(--ink-soft);}
+
+  /* ---------- Services ---------- */
+  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);}
+  @media (max-width:900px){.services-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:600px){.services-grid{grid-template-columns:1fr;}}
+  .service-cell{
+    border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+    padding:38px 32px;
+    transition:background .3s var(--ease);
+  }
+  .service-cell:hover{background:var(--ivory-soft);}
+  .service-cell .n{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--brass);}
+  .service-cell h3{font-size:21px;margin-top:16px;font-weight:500;}
+  .service-cell p{font-size:13.5px;color:var(--ink-soft);margin-top:10px;}
+
+  /* ---------- Portfolio ---------- */
+  .portfolio-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:2px;
+  }
+  @media (max-width:980px){.portfolio-grid{grid-template-columns:repeat(2,1fr);}}
+  .p-card{position:relative;overflow:hidden;cursor:pointer;background:var(--ink);}
+  .p-card.span2{grid-column:span 2;}
+  .p-card.tall{grid-row:span 2;}
+  .p-card img{
+    width:100%;height:100%;object-fit:cover;
+    aspect-ratio:1/1;
+    transition:transform .8s var(--ease), filter .5s var(--ease);
+    filter:saturate(0.94) brightness(0.94);
+  }
+  .p-card.tall img{aspect-ratio:1/2.06;}
+  @media (max-width:980px){ .p-card.tall img{aspect-ratio:1/1;} .p-card.tall{grid-row:span 1;} }
+  .p-card:hover img{transform:scale(1.055);filter:saturate(1) brightness(1);}
+  .p-card-overlay{
+    position:absolute;left:0;right:0;bottom:0;padding:22px;
+    background:linear-gradient(180deg, transparent, rgba(20,16,13,0.86) 90%);
+    color:var(--ivory);
+    transform:translateY(8px);opacity:0;
+    transition:all .35s var(--ease);
+  }
+  .p-card:hover .p-card-overlay{transform:translateY(0);opacity:1;}
+  .p-card-overlay .n{font-family:'IBM Plex Mono',monospace;font-size:10px;color:#D9BE85;letter-spacing:.08em;}
+  .p-card-overlay h4{font-size:16px;margin-top:4px;font-weight:500;font-family:'Fraunces';}
+
+  /* ---------- Materials strip ---------- */
+  .materials-scroller{
+    display:flex;gap:2px;overflow-x:auto;
+    padding-bottom:8px;
+    scrollbar-width:thin;
+  }
+  .m-card{
+    flex:0 0 auto;width:280px;position:relative;background:var(--ink);
+  }
+  .m-card img{width:280px;height:340px;object-fit:cover;filter:saturate(.92) brightness(.95);}
+  .m-caption{padding:16px 2px 0;}
+  .m-caption .n{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--brass);}
+  .m-caption h4{font-size:15.5px;margin-top:4px;font-weight:500;}
+  .materials-note{
+    margin-top:36px;font-size:13.5px;color:var(--ink-soft);max-width:640px;
+    border-left:2px solid var(--brass);padding-left:18px;
+  }
+
+  /* ---------- Process ---------- */
+  /* vertical alternating timeline */
+  .timeline{position:relative;margin-top:20px;padding:20px 0;}
+  .timeline::before{
+    content:'';position:absolute;left:50%;top:0;bottom:0;width:1px;
+    background:var(--line-light);transform:translateX(-50%);
+  }
+  @media (max-width:760px){.timeline::before{left:23px;}}
+  .tl-step{
+    position:relative;display:grid;grid-template-columns:1fr 70px 1fr;align-items:center;
+    padding:44px 0;
+  }
+  @media (max-width:760px){.tl-step{grid-template-columns:46px 1fr;padding:30px 0;}}
+  .tl-icon{
+    grid-column:2;justify-self:center;
+    width:64px;height:64px;border-radius:50%;
+    background:var(--ink);border:1px solid var(--brass);
+    display:flex;align-items:center;justify-content:center;
+    color:#D9BE85;position:relative;z-index:2;
+  }
+  @media (max-width:760px){.tl-icon{grid-column:1;width:46px;height:46px;}}
+  .tl-content{grid-column:1;text-align:right;padding-right:50px;}
+  .tl-step:nth-child(even) .tl-content{grid-column:3;text-align:left;padding-right:0;padding-left:50px;}
+  @media (max-width:760px){
+    .tl-content, .tl-step:nth-child(even) .tl-content{grid-column:2;text-align:left;padding:0 0 0 20px;}
+  }
+  .tl-content .code{font-family:'IBM Plex Mono',monospace;color:#D9BE85;font-size:12px;letter-spacing:.08em;}
+  .tl-content h3{font-size:22px;font-weight:500;margin-top:8px;color:var(--ivory);}
+  .tl-content p{font-size:14px;color:rgba(243,236,225,0.68);margin-top:10px;}
+
+  /* ---------- Contact ---------- */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;}
+  @media (max-width:900px){.contact-grid{grid-template-columns:1fr;gap:52px;}}
+  .info-block{display:flex;flex-direction:column;gap:28px;}
+  .info-row{border-top:1px solid var(--line);padding-top:16px;}
+  .info-row .n{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--brass);letter-spacing:.08em;text-transform:uppercase;}
+  .info-row p, .info-row a{font-size:16px;margin-top:8px;display:block;}
+  .info-row a:hover{color:var(--brass);}
+  .cta-row-contact{display:flex;gap:14px;margin-top:10px;flex-wrap:wrap;}
+
+  .map-wrap{border:1px solid var(--line);height:100%;min-height:340px;position:relative;overflow:hidden;}
+  .map-wrap iframe{width:100%;height:100%;min-height:340px;border:0;filter:grayscale(0.35) contrast(1.05);}
+
+  form.form{display:flex;flex-direction:column;gap:0;margin-top:8px;}
+  .f-row{border-bottom:1px solid var(--line);padding:16px 0;}
+  .f-row label{
+    font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--stone);display:block;margin-bottom:8px;
+  }
+  .f-row input, .f-row textarea, .f-row select{
+    width:100%;border:none;background:transparent;font-family:'Inter';font-size:16px;color:var(--ink);
+    outline:none;resize:none;padding:0;
+  }
+  .f-row textarea{height:60px;}
+  .form .btn{margin-top:26px;align-self:flex-start;}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--ink);color:rgba(243,236,225,0.72);padding:70px 0 30px;}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:50px;border-bottom:1px solid var(--line-light);padding-bottom:56px;}
+  @media (max-width:900px){.footer-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width:560px){.footer-grid{grid-template-columns:1fr;}}
+  .footer-grid h5{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--brass);margin-bottom:18px;}
+  .footer-grid ul li{margin-bottom:11px;font-size:14px;}
+  .footer-grid ul li a:hover{color:var(--ivory);}
+  .footer-brand{font-family:'Fraunces';font-size:24px;color:var(--ivory);}
+  .footer-brand-sub{font-size:13.5px;margin-top:14px;max-width:32ch;}
+  .footer-bottom{
+    display:flex;justify-content:space-between;padding-top:26px;font-size:12px;
+    flex-wrap:wrap;gap:10px;
+  }
+  .footer-bottom a{opacity:0.75;}
+  .footer-bottom a:hover{opacity:1;}
+
+  /* whatsapp float */
+  .wa-float{
+    position:fixed;right:26px;bottom:26px;z-index:80;
+    width:54px;height:54px;border-radius:50%;
+    background:#25D366;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 8px 24px rgba(0,0,0,0.25);
+    transition:transform .3s var(--ease);
+  }
+  .wa-float:hover{transform:scale(1.08);}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal.in{opacity:1;transform:translateY(0);}
+
+  /* focus visibility */
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
+    outline:2px solid var(--brass); outline-offset:3px;
+  }
+
+  ::selection{background:var(--brass);color:var(--ivory);}
+</style>
+</head>
+<body>
+
+<!-- ============ Sheet index rail ============ -->
+<nav class="rail" aria-label="Section index">
+  <div class="rail-line"></div>
+  <div class="rail-items">
+    <button class="rail-item" data-target="#hero"><span class="tick"></span><span class="code">A—01</span><span class="label">Arrival</span></button>
+    <button class="rail-item" data-target="#practice"><span class="tick"></span><span class="code">A—02</span><span class="label">Practice</span></button>
+    <button class="rail-item" data-target="#services"><span class="tick"></span><span class="code">A—03</span><span class="label">Scope</span></button>
+    <button class="rail-item" data-target="#projects"><span class="tick"></span><span class="code">A—04</span><span class="label">Portfolio</span></button>
+    <button class="rail-item" data-target="#materials"><span class="tick"></span><span class="code">A—05</span><span class="label">Materials</span></button>
+    <button class="rail-item" data-target="#method"><span class="tick"></span><span class="code">A—06</span><span class="label">Method</span></button>
+    <button class="rail-item" data-target="#visit"><span class="tick"></span><span class="code">A—07</span><span class="label">Visit</span></button>
+  </div>
+</nav>
+
+<!-- ============ Top nav ============ -->
+<!-- ============ Utility bar ============ -->
+<div class="utility-bar">
+  <a href="tel:+919407460126"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.5c0-.6.4-1 1-1H7.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>Call Now</a>
+  <a href="https://wa.me/919407460126" target="_blank" rel="noopener"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.72.45 3.39 1.3 4.87L2.05 22l5.36-1.41a9.9 9.9 0 0 0 4.63 1.18h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.13-2.9-7-1.87-1.87-4.35-2.86-7-2.86Z"/></svg>WhatsApp</a>
+  <a href="https://www.google.com/maps?q=Center+Point+Building+Snehnagar+Indore+Madhya+Pradesh+452001" target="_blank" rel="noopener"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.5 8 12 8 12s8-6.5 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>Directions</a>
+</div>
+
+<header class="topnav" id="topnav">
+  <a href="#hero" class="brand"><b>VOGUE</b> INTERIORS<span>CRAFTING SPACES — INDORE</span></a>
+  <div class="navlinks">
+    <a href="#practice">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#materials">Materials</a>
+    <a href="#visit">Contact</a>
+  </div>
+  <a href="tel:+919407460126" class="btn btn-dark">Book a Consultation</a>
+</header>
+
+<!-- ============ HERO — A01 ============ -->
+<section class="hero" id="hero">
+  <img class="hero-img" src="assets/i1.webp" alt="Living room designed by Vogue Interiors, Indore — marble feature wall and layered seating">
+  <div class="ruler" id="ruler"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Interior Design Studio — Indore</div>
+    <h1 class="hero-title">Crafting Spaces<br>That <em>Inspire.</em></h1>
+    <p class="hero-sub">Vogue Interiors plans, designs and executes residential and commercial interiors across Indore — from the first measured drawing to the last fitted cushion.</p>
+    <div class="hero-cta-row">
+      <a href="tel:+919407460126" class="btn btn-light">Book Free Consultation</a>
+      <a href="#projects" class="btn btn-light" style="border-color:rgba(243,236,225,0.5);">View Projects</a>
+    </div>
+  </div>
+  <div class="scroll-indi"><span>SCROLL</span><span class="line"></span></div>
+
+  <div class="hero-quick">
+    <div class="eyebrow">Quick Enquiry</div>
+    <form onsubmit="event.preventDefault(); this.querySelector('.btn').textContent='Thank you — we\'ll call you';">
+      <div class="hq-row"><input type="text" placeholder="Your name" required></div>
+      <div class="hq-row"><input type="tel" placeholder="Phone number" required></div>
+      <div class="hq-row">
+        <select>
+          <option>Looking for...</option>
+          <option>Residential Interiors</option>
+          <option>Commercial Interiors</option>
+          <option>Modular Kitchen</option>
+          <option>Renovation</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-dark">Request a Callback</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ TRUST CHIP STRIP ============ -->
+<div class="chip-strip">
+  <div class="wrap">
+    <div class="chip-row">
+      <div class="chip">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 3H4v18h16V9h-6V3z"/><path d="M14 3v6h6"/></svg>
+        <div class="chip-text"><b>Measured Plans</b>Space planning before design</div>
+      </div>
+      <div class="chip">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <div class="chip-text"><b>Fixed Timelines</b>Agreed before work begins</div>
+      </div>
+      <div class="chip">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7l-9-5Z"/></svg>
+        <div class="chip-text"><b>Turnkey Execution</b>One studio, start to handover</div>
+      </div>
+      <div class="chip">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 21V10l9-7 9 7v11h-6v-7H9v7H3Z"/></svg>
+        <div class="chip-text"><b>Indore-Based</b>On-site through the project</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PRACTICE — A02 ============ -->
+<section id="practice">
+  <div class="wrap">
+    <div class="eyebrow reveal">Sheet A—02 / Practice</div>
+    <div class="intro-grid" style="margin-top:34px;">
+      <div class="reveal">
+        <p class="intro-lead">We treat every room as a drawing before it is a photograph — <em>measured, planned and detailed</em> before a single material is chosen. Vogue Interiors works across Indore on residential and commercial interiors, turnkey fit-outs and focused styling projects.</p>
+      </div>
+      <div class="reveal">
+        <div class="value-list">
+          <div class="value-row">
+            <div class="value-num">01</div>
+            <div><h4>Space first</h4><p>Every project starts with a measured plan — circulation, light and function are settled before aesthetics.</p></div>
+          </div>
+          <div class="value-row">
+            <div class="value-num">02</div>
+            <div><h4>Material honesty</h4><p>We specify materials that age well — stone, wood and metal chosen for how they wear, not just how they photograph.</p></div>
+          </div>
+          <div class="value-row">
+            <div class="value-num">03</div>
+            <div><h4>One point of contact</h4><p>Design and execution are managed under one roof, from concept drawing to final handover.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">Why Vogue Interiors</div>
+        <h2 class="section-title" style="margin-top:18px;">A studio you can walk into.</h2>
+      </div>
+      <p class="section-note">Based in Snehnagar, working directly with clients across Indore — no outsourced call centre, no anonymous project codes.</p>
+    </div>
+    <div class="why-grid reveal">
+      <div class="why-cell">
+        <div class="badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 19V5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M14 3v5h5"/></svg></div>
+        <h4>Clear scope, in writing</h4>
+        <p>Plan, materials and cost are agreed before execution starts — no verbal add-ons mid-project.</p>
+      </div>
+      <div class="why-cell">
+        <div class="badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div>
+        <h4>One point of contact</h4>
+        <p>A single studio manages design and execution — you're not coordinating carpenters and painters yourself.</p>
+      </div>
+      <div class="why-cell">
+        <div class="badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M3 9h18M8 4v14"/></svg></div>
+        <h4>Local, walkable studio</h4>
+        <p>Based in Snehnagar — you can visit, see material samples and meet the team in person.</p>
+      </div>
+      <div class="why-cell">
+        <div class="badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s-7-4.35-9.5-8.5C.7 8.6 2.6 5 6.2 5c2 0 3.4 1 5.8 3.5C14.4 6 15.8 5 17.8 5c3.6 0 5.5 3.6 3.7 7.5C19 16.65 12 21 12 21Z"/></svg></div>
+        <h4>Built for how you'll live in it</h4>
+        <p>Layouts are planned around daily use first — storage, light and circulation, not just the photograph.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES — A03 ============ -->
+<section class="tight" id="services" style="background:var(--ivory-soft);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">Sheet A—03 / Scope of Work</div>
+        <h2 class="section-title" style="margin-top:18px;">What we design and deliver.</h2>
+      </div>
+      <p class="section-note">Nine services, one studio — from the first floor plan to the last shelf edge.</p>
+    </div>
+
+    <div class="services-grid reveal">
+      <div class="service-cell"><div class="n">01</div><h3>Residential Interiors</h3><p>Full-home and single-room interiors, planned around how a household actually lives.</p></div>
+      <div class="service-cell"><div class="n">02</div><h3>Commercial Interiors</h3><p>Retail, hospitality and workspace interiors built for both first impression and daily use.</p></div>
+      <div class="service-cell"><div class="n">03</div><h3>Office Interiors</h3><p>Workspaces planned for focus, collaboration and brand presence.</p></div>
+      <div class="service-cell"><div class="n">04</div><h3>Space Planning</h3><p>Layout and circulation studies before design begins — the discipline behind every project.</p></div>
+      <div class="service-cell"><div class="n">05</div><h3>Modular Kitchen Design</h3><p>Kitchens planned around workflow first, finishes second.</p></div>
+      <div class="service-cell"><div class="n">06</div><h3>Furniture Design</h3><p>Custom and curated furniture pieces, scaled and detailed for the room they sit in.</p></div>
+      <div class="service-cell"><div class="n">07</div><h3>Interior Styling</h3><p>Soft furnishing, art and accessory styling for spaces that are already built.</p></div>
+      <div class="service-cell"><div class="n">08</div><h3>Renovation</h3><p>Reworking existing homes and offices — structural, electrical and finish upgrades included.</p></div>
+      <div class="service-cell"><div class="n">09</div><h3>Turnkey Interior Solutions</h3><p>Design and execution managed end to end, under a single project timeline.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS — A04 ============ -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">Sheet A—04 / Portfolio</div>
+        <h2 class="section-title" style="margin-top:18px;">Completed interiors.</h2>
+      </div>
+      <p class="section-note">A selection of residential interiors delivered by the studio in and around Indore.</p>
+    </div>
+
+    <div class="filter-row reveal" role="tablist" aria-label="Filter projects by room">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="living">Living Room</button>
+      <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+      <button class="filter-btn" data-filter="kitchen-dining">Kitchen &amp; Dining</button>
+      <button class="filter-btn" data-filter="kids">Kids' Room</button>
+    </div>
+  </div>
+
+  <div class="portfolio-grid reveal" style="margin-top:34px;">
+    <div class="p-card tall" data-cat="living">
+      <img src="assets/i1.webp" alt="Living room with marble feature wall and textured ceiling">
+      <div class="p-card-overlay"><div class="n">RESIDENTIAL — LIVING ROOM</div><h4>Marble &amp; textured-wall living space</h4></div>
+    </div>
+    <div class="p-card" data-cat="kitchen-dining">
+      <img src="assets/i4.webp" alt="Kitchen with cream cabinetry and black marble counters">
+      <div class="p-card-overlay"><div class="n">RESIDENTIAL — KITCHEN</div><h4>Cream cabinetry, black marble island</h4></div>
+    </div>
+    <div class="p-card" data-cat="living">
+      <img src="assets/i12.webp" alt="Living room with teal sofa and wood-clad ceiling">
+      <div class="p-card-overlay"><div class="n">RESIDENTIAL — LIVING ROOM</div><h4>Wood-clad ceiling with teal seating</h4></div>
+    </div>
+    <div class="p-card span2" data-cat="bedroom">
+      <img src="assets/i10.webp" alt="Bedroom with gold damask wallpaper and tufted bed">
+      <div class="p-card-overlay"><div class="n">RESIDENTIAL — MASTER BEDROOM</div><h4>Gold damask accent wall</h4></div>
+    </div>
+    <div class="p-card" data-cat="bedroom">
+      <img src="assets/i13.webp" alt="Bedroom with cane wingback chair and wood-panelled ceiling">
+      <div class="p-card-overlay"><div class="n">RESIDENTIAL — BEDROOM</div><h4>Cane &amp; wood-panelled bedroom</h4></div>
+    </div>
+    <div class="p-card" data-cat="kitchen-dining">
+      <img src="assets/i16.webp" alt="Dining nook with marble feature wall and brass chandelier">
+      <div class="p-card-overlay"><div class="n">RESIDENTIAL — DINING</div><h4>Marble dining nook</h4></div>
+    </div>
+    <div class="p-card" data-cat="kids">
+      <img src="assets/i3.webp" alt="Children's bedroom with colourful panelled headboard wall">
+      <div class="p-card-overlay"><div class="n">RESIDENTIAL — KIDS' ROOM</div><h4>Playful panelled headboard wall</h4></div>
+    </div>
+    <div class="p-card" data-cat="kids">
+      <img src="assets/i15.webp" alt="Children's bedroom with pink panelled wardrobe wall">
+      <div class="p-card-overlay"><div class="n">RESIDENTIAL — KIDS' ROOM</div><h4>Pink panelled wardrobe wall</h4></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MATERIALS — A05 ============ -->
+<section class="tight" id="materials" style="background:var(--ivory-soft);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">Sheet A—05 / Materials &amp; Sourcing</div>
+        <h2 class="section-title" style="margin-top:18px;">What we specify.</h2>
+      </div>
+      <p class="section-note">Stone, seating and lighting references we work with when specifying a project — shown here as material studies, not finished installations.</p>
+    </div>
+
+    <div class="materials-scroller reveal">
+      <div class="m-card">
+        <img src="assets/i2.webp" alt="Marble-top dining table with sculptural gold base">
+        <div class="m-caption"><div class="n">STONE</div><h4>Live-edge marble dining tops</h4></div>
+      </div>
+      <div class="m-card">
+        <img src="assets/i7.webp" alt="Modular kitchen island in white and walnut finishes">
+        <div class="m-caption"><div class="n">MODULAR KITCHENS</div><h4>Island layouts, matte &amp; walnut finishes</h4></div>
+      </div>
+      <div class="m-card">
+        <img src="assets/i6.webp" alt="Tufted lounge chair in taupe upholstery">
+        <div class="m-caption"><div class="n">SEATING</div><h4>Tufted upholstered seating</h4></div>
+      </div>
+      <div class="m-card">
+        <img src="assets/i8.webp" alt="Brass console table with hexagonal base">
+        <div class="m-caption"><div class="n">METALWORK</div><h4>Brass console &amp; occasional pieces</h4></div>
+      </div>
+      <div class="m-card">
+        <img src="assets/i9.webp" alt="Panelled lounge with tufted sofas and statement chandelier">
+        <div class="m-caption"><div class="n">LIGHTING</div><h4>Statement chandeliers &amp; panelled walls</h4></div>
+      </div>
+    </div>
+
+    <p class="materials-note reveal">These material and furniture references guide what we specify and source for clients — they are shown to illustrate finish quality, not listed as completed Vogue Interiors projects.</p>
+  </div>
+</section>
+
+<!-- ============ METHOD — A06 ============ -->
+<section class="dark" id="method">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">Sheet A—06 / Method</div>
+        <h2 class="section-title" style="margin-top:18px;color:var(--ivory);">How a project runs.</h2>
+      </div>
+      <p class="section-note">Five stages, in order — because the sequence itself avoids rework later.</p>
+    </div>
+
+    <div class="timeline reveal">
+      <div class="tl-step">
+        <div class="tl-content">
+          <div class="code">STEP 01</div>
+          <h3>Consultation</h3>
+          <p>An on-site or in-studio conversation about the space, the budget and how you intend to use each room.</p>
+        </div>
+        <div class="tl-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.5c0-.6.4-1 1-1H7.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg></div>
+      </div>
+      <div class="tl-step">
+        <div class="tl-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-6h6v6"/></svg></div>
+        <div class="tl-content">
+          <div class="code">STEP 02</div>
+          <h3>Space Planning</h3>
+          <p>Measured drawings, layout options and circulation studies — the plan is agreed before design starts.</p>
+        </div>
+      </div>
+      <div class="tl-step">
+        <div class="tl-content">
+          <div class="code">STEP 03</div>
+          <h3>Concept &amp; Materials</h3>
+          <p>Mood, palette, furniture and material selections presented against the approved plan.</p>
+        </div>
+        <div class="tl-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div>
+      </div>
+      <div class="tl-step">
+        <div class="tl-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 7l9-4 9 4-9 4-9-4Z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></svg></div>
+        <div class="tl-content">
+          <div class="code">STEP 04</div>
+          <h3>Execution</h3>
+          <p>Civil work, carpentry, electrical and finishing managed on site under one project timeline.</p>
+        </div>
+      </div>
+      <div class="tl-step">
+        <div class="tl-content">
+          <div class="code">STEP 05</div>
+          <h3>Handover</h3>
+          <p>Final styling, snag checks and walkthrough before the space is handed back to you.</p>
+        </div>
+        <div class="tl-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M20 6 9 17l-5-5"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISIT / CONTACT — A07 ============ -->
+<section id="visit">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">Sheet A—07 / Visit the Studio</div>
+        <h2 class="section-title" style="margin-top:18px;">Start with a conversation.</h2>
+      </div>
+      <p class="section-note">Call, message on WhatsApp, or send the details of your project below.</p>
+    </div>
+
+    <div class="contact-grid reveal">
+      <div>
+        <div class="info-block">
+          <div class="info-row">
+            <div class="n">Studio Address</div>
+            <p>Center Point Building, Snehnagar,<br>Indore, Madhya Pradesh 452001</p>
+          </div>
+          <div class="info-row">
+            <div class="n">Phone</div>
+            <a href="tel:+919407460126">+91 94074 60126</a>
+          </div>
+          <div class="info-row">
+            <div class="n">Hours</div>
+            <p>Monday – Saturday, 11 AM – 7 PM<br>Closed Sunday</p>
+          </div>
+          <div class="info-row">
+            <div class="n">Areas Served</div>
+            <p>Indore and nearby areas</p>
+          </div>
+          <div class="info-row">
+            <div class="cta-row-contact">
+              <a href="tel:+919407460126" class="btn btn-dark">Call the studio</a>
+              <a href="https://wa.me/919407460126" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="form" onsubmit="event.preventDefault(); this.querySelector('.btn').textContent='Message sent';">
+          <div class="f-row">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your full name" required>
+          </div>
+          <div class="f-row">
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" placeholder="+91" required>
+          </div>
+          <div class="f-row">
+            <label for="type">Project type</label>
+            <select id="type">
+              <option>Residential Interiors</option>
+              <option>Commercial Interiors</option>
+              <option>Office Interiors</option>
+              <option>Modular Kitchen</option>
+              <option>Renovation</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="f-row">
+            <label for="msg">Tell us about the space</label>
+            <textarea id="msg" placeholder="Location, approximate size, timeline..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark">Send Enquiry</button>
+        </form>
+      </div>
+
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps?q=Center+Point+Building+Snehnagar+Indore+Madhya+Pradesh+452001&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Vogue Interiors studio location"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="tight" style="background:var(--ivory-soft);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">Common Questions</div>
+        <h2 class="section-title" style="margin-top:18px;">Before you call.</h2>
+      </div>
+      <p class="section-note">A few things people usually ask before their first consultation.</p>
+    </div>
+
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q"><span>How does a project usually start?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>With a consultation — either at the studio in Snehnagar or an on-site visit — to understand the space, the budget and how you plan to use it. From there we move into measured space planning before any design decisions are made.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>Do you handle both design and execution?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>Yes — Vogue Interiors offers turnkey interior solutions, meaning design, material sourcing and on-site execution are managed by one studio, with a single point of contact throughout.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>What areas do you serve?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>The studio is based in Snehnagar, Indore, and serves Indore and nearby areas. Get in touch with your location and we'll confirm whether it's within reach.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>How much does an interior project cost?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>Cost depends on the size of the space, the scope of work and the materials chosen, so we don't quote a fixed range online. Bring your requirements to a consultation and we'll walk through a detailed estimate before anything is agreed.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>Can I visit the studio before deciding?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>Yes — the studio at Center Point Building, Snehnagar is open Monday to Saturday, 11 AM to 7 PM. You're welcome to walk in, see material references and talk through your project in person.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wa-bubble" id="waBubble">
+  <button onclick="document.getElementById('waBubble').classList.remove('show')" aria-label="Close">×</button>
+  <b>Hi there 👋</b>
+  Questions about a project? Message the studio directly on WhatsApp.
+</div>
+<a href="https://wa.me/919407460126" target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.72.45 3.39 1.3 4.87L2.05 22l5.36-1.41a9.9 9.9 0 0 0 4.63 1.18h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.13-2.9-7-1.87-1.87-4.35-2.86-7-2.86Zm5.8 14.13c-.24.68-1.4 1.3-1.94 1.36-.5.06-1.05.29-3.5-.73-2.95-1.22-4.83-4.17-4.98-4.36-.14-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.03-2.46.27-.3.6-.37.8-.37.2 0 .4 0 .58.01.19.01.44-.07.68.52.25.6.85 2.07.92 2.22.07.15.12.33.02.52-.1.2-.15.32-.3.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.3.77 1.27 1.65 2.05 1.14 1.02 2.1 1.34 2.4 1.49.3.15.47.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.24.66-.14.27.1 1.72.81 2.02.96.3.15.5.22.57.35.07.12.07.7-.17 1.39Z"/></svg>
+</a>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><b>VOGUE</b> INTERIORS</div>
+        <p class="footer-brand-sub">Crafting Spaces That Inspire — an interior design studio in Indore, working across residential, commercial and turnkey projects.</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#practice">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#materials">Materials</a></li>
+          <li><a href="#method">Process</a></li>
+          <li><a href="#visit">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Residential Interiors</a></li>
+          <li><a href="#services">Commercial Interiors</a></li>
+          <li><a href="#services">Modular Kitchens</a></li>
+          <li><a href="#services">Turnkey Solutions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Studio</h5>
+        <ul>
+          <li>Center Point Building, Snehnagar</li>
+          <li>Indore, MP 452001</li>
+          <li><a href="tel:+919407460126">+91 94074 60126</a></li>
+          <li><a href="https://wa.me/919407460126" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Vogue Interiors — Crafting Spaces. All rights reserved.</span>
+      <span>Privacy Policy &amp; Terms — to be finalised with the studio.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // top nav background on scroll
+  const topnav = document.getElementById('topnav');
+  window.addEventListener('scroll', () => {
+    topnav.classList.toggle('scrolled', window.scrollY > 40);
+  }, {passive:true});
+
+  // build ruler ticks
+  const ruler = document.getElementById('ruler');
+  const track = document.createElement('div');
+  track.className = 'ruler-track';
+  ruler.appendChild(track);
+  function buildRuler(){
+    track.innerHTML = '';
+    const w = track.getBoundingClientRect().width;
+    const step = 34;
+    const count = Math.floor(w/step);
+    for(let i=0;i<=count;i++){
+      const t = document.createElement('div');
+      const major = i % 5 === 0;
+      t.className = 'ruler-tick' + (major ? ' major' : '');
+      t.style.left = (i*step)+'px';
+      track.appendChild(t);
+      if(major){
+        const l = document.createElement('div');
+        l.className = 'ruler-label';
+        l.style.left = (i*step+4)+'px';
+        l.textContent = (i*250).toString().padStart(4,'0');
+        track.appendChild(l);
+      }
+    }
+  }
+  buildRuler();
+  window.addEventListener('resize', buildRuler);
+
+  // rail + nav active state via IntersectionObserver
+  const sections = ['hero','practice','services','projects','materials','method','visit'].map(id => document.getElementById(id));
+  const railItems = document.querySelectorAll('.rail-item');
+  const navLinks = document.querySelectorAll('.navlinks a');
+
+  railItems.forEach(item => {
+    item.addEventListener('click', () => {
+      document.querySelector(item.dataset.target).scrollIntoView({behavior:'smooth'});
+    });
+  });
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        const id = '#' + entry.target.id;
+        railItems.forEach(r => r.classList.toggle('active', r.dataset.target === id));
+        navLinks.forEach(n => n.classList.toggle('active', n.getAttribute('href') === id));
+      }
+    });
+  }, {threshold:0.4, rootMargin:'-10% 0px -10% 0px'});
+  sections.forEach(s => s && io.observe(s));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const answer = item.querySelector('.faq-a');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(o => {
+        o.classList.remove('open');
+        o.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // portfolio filter
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const pCards = document.querySelectorAll('.p-card');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      pCards.forEach(card => {
+        card.classList.toggle('hidden', f !== 'all' && card.dataset.cat !== f);
+      });
+    });
+  });
+
+  // whatsapp bubble — appears once after a short delay
+  const waBubble = document.getElementById('waBubble');
+  setTimeout(() => waBubble.classList.add('show'), 4000);
+
+  // reveal on scroll
+  const revealIO = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if(e.isIntersecting){ e.target.classList.add('in'); revealIO.unobserve(e.target); }
+    });
+  }, {threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(el => revealIO.observe(el));
+</script>
+</body>
+</html>
